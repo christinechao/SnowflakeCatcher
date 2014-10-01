@@ -1,5 +1,5 @@
 SnowFlake [] snowOne, snowTwo;
-int size;
+int sizeOfBall;
 
 void setup()
 {
@@ -56,9 +56,9 @@ class SnowFlake
     colorMode(HSB);
     int h = (int)(Math.random()*255);
     fill(h, 255/2, 255);
-    size = (int)(Math.random()*8)+1;
+    sizeOfBall = (int)(Math.random()*8)+1;
     noStroke();
-    ellipse(x, y, size, size);
+    ellipse(x, y, sizeOfBall, sizeOfBall);
   }
   void lookDown()
   {
