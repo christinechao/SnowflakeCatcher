@@ -3,11 +3,11 @@ int sizeOfBall;
 
 void setup()
 {
-  size(500,500);
+  size(900,500);
   background(0);
-  snowOne = new SnowFlake [100];
+  snowOne = new SnowFlake [150];
   for(int i=0; i<snowOne.length; i++){
-    snowOne[i] = new SnowFlake(i*5, (int)(Math.random()*4)+1);
+    snowOne[i] = new SnowFlake(i*6, (int)(Math.random()*4)+1);
   }
 }
 void draw()
